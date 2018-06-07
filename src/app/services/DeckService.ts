@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Card } from './Card';
+import { Card } from 'src/app/model/Card';
 
 export interface IDeckType {
   cards: Array<Card>,

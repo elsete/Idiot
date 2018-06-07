@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DeckService, IDeckType } from '../app//model/DeckService';
+import { DeckService, IDeckType } from '../app/services/DeckService';
 import { Card } from './model/Card';
 import { Player } from './model/Player';
 

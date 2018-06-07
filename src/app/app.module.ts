@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { DeckService } from 'src/app/model/DeckService';
+import { DeckService } from 'src/app/services/DeckService';
 import { CardComponent } from './components/card/card/card.component';
 
 @NgModule({
