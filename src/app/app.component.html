@@ -1,0 +1,27 @@
+<head></head>
+
+
+<div *ngIf="this?.deck.cards != null">
+
+  <div class="container">
+
+    <button type="button" (click)="this.dealCards(1)" >Dame Carta</button>
+
+    <div class="table">
+      <ul class="card-list">
+        <li *ngFor="let card of this.deck.cards">
+          <app-card [card]="card"></app-card>
+        </li>
+      </ul>
+    </div>
+
+    <div class="deck">
+      <ul class="card-list">
+        <li *ngFor="let card of this.player.hand">
+          <app-card [card]="card"></app-card>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,50 @@
+
+
+.card {
+  width: 60px;
+  height: 80px;
+  border-radius: 3px;
+  border: 1px solid #666;
+  background-color: #f0f0f0;
+  padding: 4px;
+  font-size: 20px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+
+}
+
+.card-list {
+  list-style-type: none;
+}
+
+.card-list li {
+  display: inline-block;
+  margin: 0 5px 5px 0;
+}
+
+.table .card-list li {
+  display: inline-block;
+  margin: 0 -55px 0px 0;
+}
+
+.card.red {
+  color: red;
+}
+
+.card.black {
+  color: black;
+}
+
+.aside {
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAATElEQVQoU5WQUQoAIAhD9f6HLhZM5ioof0R6zq2MiBEPlQZiZjUBBRXaYILaFSohBwH5lWXhpOTRGsgldDzQbwX6DuM2qHpVVKD98QTLdxwBOm30cwAAAABJRU5ErkJggg==);
+  background-color: #ddd;
+}
+
+.card .suit {
+  font-size: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,14 @@
+<div *ngIf="this.card">
+  <div *ngIf="!this.card.flipped" class="card {{ this.card.suit.color }}" title="{{ this.card.displayName }}">
+    <div class="side">
+      <div class="letter">{{ card.letter }}</div>
+      <div class="suit" [innerHTML]="this.card.suit.glyph"></div>
+    </div>
+  </div>
+  <div *ngIf="this.card.flipped" class="card aside">
+    <div class="side">
+      <div class="letter"></div>
+    </div>
+  </div>
+</div>
+
