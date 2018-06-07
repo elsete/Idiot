@@ -17,7 +17,10 @@
 
     <div class="deck">
       <ul class="card-list">
-        <li *ngFor="let card of this.player.hand">
+        <li *ngFor="let card of this.player.hand"
+        [@flyInOut]="'in2'"
+        (@flyInOut.start)="this.animationStarted($event)"
+        class="target-list-item" >
           <app-card [card]="card"></app-card>
         </li>
       </ul>
